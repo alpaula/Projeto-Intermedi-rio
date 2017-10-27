@@ -1,8 +1,8 @@
 body{
 	background: #000;
 	width: 100%;
-	height: 100vh;
-	margin: 1px;
+	height: 100%;
+	margin: 0;
 }
 .cabecalho{
 	position: relative;
@@ -132,7 +132,6 @@ body{
 	width: 100%;
 	height: 40vh;
 	position: relative;
-	display: ;
 }
 .fundo-rodape{
 	width: 99%;
