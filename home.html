@@ -9,31 +9,35 @@
 	</head>
 	<body class="body-home">
 		<header class="cabecalho">
-			<img class="fundo-cabecalho" src="assets/ft-header.jpg">
-			<img class="logo-cabecalho" src="assets/Ft-CpxLogo.png">
-			<nav class="menu">
-				<a id="menu-home" href="home.html">Home</a>
-				<a id="menu-galeria" href="galeria.html">Galeria de Fotos</a>
-				<a id="menu-contato" href="contato.html">Contato</a>
+			<img class="cabecalho-logo" src="assets/Ft-CpxLogo.png">
+			<nav class="cabecalho-menu">
+				<a class="menu-item" href="home.html">Home</a>
+				<a class="menu-item" href="galeria.html">Galeria de Fotos</a>
+				<a class="menu-item" href="contato.html">Contato</a>
 			</nav>
 		</header>
-		<main class="conteudo-home">
-			<h1 class="titulo">Fotografia</h1>
-			<img class="foto-esquerda-home" src="fotos/foto04.jpg">
-			<img class="foto-direita1-home" src="fotos/foto01.jpg">
-			<img class="foto-direita2-home" src="fotos/foto03.jpg">
-			<a id="texto-outras-fotos" href="galeria.html">mais fotos [...]</a>
+		<main class="conteudoHome">
+			<section>
+				<div class="conteudoHome-quadro">
+					<a class="texto-outras-fotos" href="galeria.html">mais fotos [...]</a>
+				</div>
+				<h2 class="titulo">Fotografia</h2>
+				<img class="foto-esquerda-home" src="fotos/foto04.jpg">
+				<div class="caixafotos">
+					<img class="foto-direita-home" src="fotos/foto01.jpg">
+					<img class="foto-direita-home" src="fotos/foto03.jpg">
+				</div>
+			</section>
 		</main>
-		<footer class="rodape">
+		<footer class="rodape rodape-home">
 			<h2 class="texto-rodape-home">Somos um grupo de fotógrafos do Complexo do Alemão apaixonados por fotos.</h2>
-			<img class="fundo-rodape-home" src="assets/footer.jpg">
-			<ul class="redes">
+			<div class="redes">
 				<img class="redes-sociais" src="assets/facebook.png">
 				<img class="redes-sociais" src="assets/twitter.png">
 				<img class="redes-sociais" src="assets/instagran.png">
 				<img class="redes-sociais" src="assets/pinterest.png">
-			</ul>
-			<p class="creditos-home">Powered Karolayne and Anna Luiza on Vai na Web.</p>
+			</div>
+			<p class="creditos creditos-home">Powered Karolayne and Anna Luiza on Vai na Web.</p>
 		</footer>
 	</body>
 </html>
