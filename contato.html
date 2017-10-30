@@ -1,65 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
-		<title>Home-Contato</title>
+		<title>Contato</title>
 		<meta charset="utf-8">
 		<meta name="vieport" content="width=divice-width, initial-scalet=1.0">
 		<link rel="stylesheet" href="style.css">
 		<link rel="shortcut icon" href="assets/Ft-CpxLogo.png">
 	</head>
 	<body class="body-contato">
-		<header class="cabecalho-contato">
-			<img class="logo-cabecalho" src="assets/Ft-CpxLogo.png">
-			<nav class="menu">
+		<header class="cabecalho cabecalhoContato">
+			<img class="cabecalho-logo" src="assets/Ft-CpxLogo.png">
+			<nav class="cabecalho-menu">
 				<a class="menu-item" href="home.html">Home</a>
 				<a class="menu-item" href="galeria.html">Galeria de Fotos</a>
 				<a class="menu-item" href="contato.html">Contato</a>
 			</nav>
 		</header>
-		<main class="conteudo-contato">
-			<h1 class="titulo-contato">Fale conosco</h1>
-			<section class="localizacao">
-				<img class="logo-localizacao" src="assets/loc.png">
-				<p class="texto-localizacao">Rua Canitar, 35<br>
+		<main class="conteudoContato">
+			<section class="conteudoContato-localizacao">
+				<img class="localizacao-logo" src="assets/loc.png">
+				<p class="localizacao-texto">Rua Canitar, 35<br>
 					Inhaúma - Rio de Janeiro / RJ<br>
 					(21)99999-9999<br>
 					facebook.com/Ft-Cpx</p>
 			</section>
-			<section class="caixa-formulario">
+			<section class="conteudoContato-formulario">
+				<h2 class="formulario-titulo">Fale conosco</h2>
 				<form class="formulario" action="/action_page.php">
-					<label class="dados-formulario">Nome:</label><br>
-					<input class="caixa-texto-formulario" type="text" name="Nome" value="">
+					<label class="formulario-dados">Nome:</label><br>
+					<input class="formulario-caixaTexto" type="text" name="Nome" value="">
 					<br>
-					<label class="dados-formulario">E-mail:</label><br>
-					<input class="caixa-texto-formulario" type="email" name="E-mail" value="">
+					<label class="formulario-dados">E-mail:</label><br>
+					<input class="formulario-caixaTexto" type="email" name="E-mail" value="">
 					<br>
-					<label class="dados-formulario">Telefone:</label><br>
-					<input class="caixa-texto-formulario" type="numbr" name="Telefone:" value="">
+					<label class="formulario-dados">Telefone:</label><br>
+					<input class="formulario-caixaTexto" type="numbr" name="Telefone:" value="">
 					<br>
-					<label class="dados-formulario">Mensagem:</label><br>
-					<input class="caixa-texto-mensagem" type="text" name="Mensagem:" value="">
+					<label class="formulario-dados">Mensagem:</label><br>
+					<input class="formulario-caixaMensagem" type="text" name="Mensagem:" value="">
 					<br>
 					<br>
-					<input class="botão" type="submit" value="Enviar">
+					<input class="formulario-botão" type="submit" value="Enviar">
 				</form>
 			</section>
 		</main>
-		<footer class="rodape-contato">
-			<section class="caixa-realizacao">
-				<h3 class="titulo-realizacao">Realização:</h3>
-				<img class="logo-realizacao" src="assets/vainaweb.png">
+		<footer class="rodape rodadeContato">
+			<section class="rodadeContato-caixa">	
+				<section class="rodadeContato-realizacao">
+					<h3 class="realizacao-titulo">Realização:</h3>
+					<img class="realizacao-logo" src="assets/vainaweb.png">
+				</section>
+				<section class="rodadeContato-apoio">
+					<h3 class="apoio-titulo">Apoio:</h3>
+					<img class="apoio-logo" src="assets/precisaser.png">
+					<img class="apoio-logo2" src="assets/1sti-Logo.png">
+				</section>
 			</section>
-			<section class="caixa-apoio">
-				<h3 class="titulo-apoio">Apoio:</h3>
-				<img class="logo1-apoio" src="assets/precisaser.png">
-				<img class="logo2-apoio" src="assets/1sti-Logo.png">
-			</section>
-			<ul class="redes">
-				<img class="redes-sociais" src="assets/facebook.png">
-				<img class="redes-sociais" src="assets/twitter.png">
-				<img class="redes-sociais" src="assets/instagran.png">
-				<img class="redes-sociais" src="assets/pinterest.png">
-			</ul>
+			<div class="rodapeHome-redes">
+				<img class="redes-logos" src="assets/facebook.png">
+				<img class="redes-logos" src="assets/twitter.png">
+				<img class="redes-logos" src="assets/instagran.png">
+				<img class="redes-logos" src="assets/pinterest.png">
+			</div>
 			<p class="creditos creditos-contato">Powered Karolayne and Anna Luiza on Vai na Web.</p>
 		</footer>
 	</body>

@@ -1,11 +1,13 @@
 .cabecalho{
-	background: url(assets/ft-header.jpg) no-repeat center;
-	background-size: cover;
 	width: 100%;
 	height: 71vh;
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
+}
+.cabecalhoHome{
+	background: url(assets/ft-header.jpg) no-repeat center;
+	background-size: cover;
 }
 .cabecalho-logo{
 	width: 16%;
@@ -25,7 +27,7 @@
 	text-decoration:none;
 	border-radius: 50px;
 }
-.conteudo-home{
+.conteudoHome-sessao{
 	width: 100%;
 	background-color: #000;
 	display: flex;
@@ -34,227 +36,233 @@
 	flex-wrap: wrap;
 	position: relative;
 }
-.titulo{
+.conteudoHome-titulo{
 	width: 100%;
+	padding-top: 2%;
+	margin-bottom: 1%;
 	font-size: 45px;
 	color: #fff;
 	text-align: center;
 }
-.quadro-home{
-	width: 50%;
-	height: 100vh;
+.conteudoHome-quadro{
+	width: 55%;
+	height: 120vh;
 	font-size: 45px;
 	color: #fff;
 	display: flex;
 	justify-content: flex-end;
 	align-items: flex-end;
 	position: absolute;
-	top: 20px;
+	top: 40px;
 	left: 300px;
 	border: solid 5px #fff;
 	z-index: 1;
 }
-.texto-outras-fotos{
+.quadro-texto{
+	width: 25%;
+	padding: 2%;
 	font-size: 30px;
 	color: #fff;
 	position: absolute;
 	text-decoration:none;
 }
-.foto-esquerda-home{
-	width: 48%;
-	margin: 4px 8px;
+.conteudoHome-foto{
+	width: 49%;
+	margin: 6px;
 }
 .caixafotos{
-	width: 50%;
+	height: 145vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
-.foto-direita-home{
+.caixafotos-fotos{
 	width: 100%;
-	margin: 4px;
+	height: 72vh;
 }
 .rodape{
 	width: 100%;
 	height: 40vh;
 	background-color: #000;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
 	position: relative;
 }
-.rodape-home{
+.rodapeHome{
 	background: url(fotos/foto02.jpg) no-repeat center;
 	background-size: cover;
 	width: 100%;
 }
-.texto-rodape-home{
+.rodapeHome-texto{
 	width: 50%;
 	font-size: 35px;
 	color: #fff;
-	position: absolute;
-	top: 5%;
 	margin-left: 2%;
 }
-.redes{
-	width: 40%;
-	height: 50px;
-	position: absolute;
-	top: 14%;
-	right: 2%;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-	align-items: flex-start;
+.rodapeHome-redes{
+	width: 25%;
+	margin-top: 2%;
 }
-.redes-sociais{
-	width: 14%;
+.redes-logos{
+	width: 20%;
 	margin: 1%;
 }
 .creditos{
 	width: 100%;
+	height: 5vh;
 	text-align: center;
 	font-size: 25px;
 	position: absolute;
 	bottom: 0;
 	margin: 0;
-	padding-top: 15px;
 }
 .creditos-home{
 	background-color: rgba(255, 255, 255, 0.8);
 }
-.cabecalho-contato{
-	position: relative;
+.cabecalhoContato{
 	background-color: #a52a2a;
+	height: 45vh;
+}
+.conteudoContato{
 	width: 100%;
-	height: 40vh;
-	display: flex;
-	justify-content: flex-end;
-}
-.localizacao{
-	width: 45%;
-	height: 55%;
-}
-.logo-localizacao{
-	width: 18%;
-	height: 13vh;
-	margin-left: 10%; 
-}
-.texto-localizacao{
-	font-size: 25px;
-	color: #fff;
-	margin-left: 10%;
-}
-.conteudo-contato{
-	width: 100%;
+	height: 95vh;
 	background: #a52a2a;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-content: flex-start;
 }
-.titulo-contato{
-	width: 110%;
+.conteudoContato-localizacao{
+	width: 50%;
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.localizacao-logo{
+	width: 18%;
+	margin-left: 10%; 
+}
+.localizacao-texto{
+	font-size: 25px;
+	color: #fff;
+	margin-left: 10%;
+}
+.conteudoContato-formulario{
+	width: 50%;
+	height: 90vh;
+}
+.formulario-titulo{
+	width: 95%;
 	height: 10vh;
+	padding-right: 5%;
+	margin-bottom: 1%; 
 	font-size: 50px;
 	color: #fff;
 	display: flex;
 	justify-content: flex-end;
-	margin: 0;
-	padding-right: 2%;
 }
-.caixa-formulario{
-	width: 50%;
-	height: 55%;
-}
-.dados-formulario{
+.formulario-dados{
 	font-size: 30px;
 	color: #fff;
 	margin: 0;
 }
-.caixa-texto-formulario{
+.formulario-caixaTexto{
 	width: 95%;
-	height: 4vh;
+	height: 5vh;
 	background: #fff;
 	color: #fff;
 	border: 1px solid #000;
 }
-.caixa-texto-mensagem{
+.formulario-caixaMensagem{
 	width: 95%;
-	height: 20vh;
+	height: 25vh;
 	background: #fff;
 	color: #fff;
 	border: 1px solid #000;
 }
-.botão{
+.formulario-botão{
 	font-size: 17px;
 	position: absolute;
 	right: 3%;
 }
-.rodape-contato{
-	width: 100%;
-	height: 40vh;
-	border-top: solid 1px #fff;
+.rodadeContato{
 	background-color: #a52a2a;
-	position: relative;
+}
+.rodadeContato-caixa{
+	width: 35%;
 	display: flex;
-	flex-wrap: wrap;
+	justify-content: flex-start;
 }
-.caixa-realizacao{
-	width: 15%;
-	height: 30vh;
+.rodadeContato-realizacao{
+	width: 40%;
 }
-.titulo-realizacao{
+.realizacao-titulo{
 	font-size: 25px;
 	color: #fff;
 	margin-left: 10%;
 }
-.logo-realizacao{
-	width: 70%;
-	height: 17vh;
+.realizacao-logo{
+	width: 60%;
 	margin-left: 10%;
 }
-.caixa-apoio{
-	width: 20%;
-	height: 25vh;
-	position: relative;
+.rodadeContato-apoio{
+	width: 60%;
+	flex-wrap: wrap;
 }
-.titulo-apoio{
+.apoio-titulo{
+	width: 100%;
 	font-size: 25px;
 	color: #fff;
 	margin-left:10px;
 }
-.logo1-apoio{
+.apoio-logo{
 	width: 60%;
-	height: 7vh;
-	position: absolute;
-	bottom: 15px;
-	left: 5px;
+	padding-bottom: 10%;
+	margin-right: 5%;
 }
-.logo2-apoio{
+.apoio-logo2{
 	width: 30%;
-	height: 12vh;
-	position: absolute;
-	right: 10px;
-	bottom: 0px;
 }
-.conteudo-galeria{
+.cabecalhoGaleria{
+	background-color: #000;
+	height: 50vh;
+}
+.conteudoGaleria{
 	width: 100%;
-	height: 135vh;
+	height: 185vh;
+	background-color: #000;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-content: flex-start;
 }
-.galeria{
+.conteudoGaleria-titulo{
+	width: 100%;
+	background-color: #000;
+	text-align: center;
+	color: #fff;
+	font-size: 30px;
+}
+.conteudoGaleria-caixa{
 	width: 100%;
 	height: 120vh;
-	margin: 0 7% 0 7%;
+	margin: 0 10% 0 10%;
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap; 
 }
-.foto{
-	height: 30vh;
+.caixa-fotos{
+	height: 32vh;
 	margin: 5px;
 }
-.rodape-galeria{
+.rodapeGaleria{
 	width: 100%;
 	height: 10vh;
 	display: flex;
 	justify-content: center;
+}
+.creditos-galeria{
+	color: #fff;
 }
