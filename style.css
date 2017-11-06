@@ -1,10 +1,13 @@
 @font-face{
-	font-family: OpenSans-Regular;
+	font-family: 'OpenSans-Regular';
 	src: url("fonts/OpenSans-Regular.ttf");
 }
 @font-face{
-	font-family: OpenSans-Bold;
+	font-family: 'OpenSans-Bold';
 	src: url("fonts/OpenSans-Bold.ttf");
+}
+body{
+	margin: 0;
 }
 .cabecalho{
 	width: 100%;
@@ -25,6 +28,8 @@
 	margin: 5%;
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-end;
 }
 .menu-item{
 	font-size: 40px;
@@ -33,7 +38,7 @@
 	margin: 1% 5px;
 	padding: 10px 15px;
 	background-color: rgba(255, 255, 255, 0.75);
-	font-family: OpenSans-Bold;
+	font-family: 'OpenSans-Bold';
 	border-radius: 50px;
 	text-decoration:none;
 }
@@ -46,6 +51,9 @@
 	}
 	.menu-item{
 		font-size: 20px;
+	}
+	.cabecalho-logo{
+		width: 25%;
 	}
 }
 
@@ -62,7 +70,7 @@
 	width: 100%;
 	padding-top: 2%;
 	margin-bottom: 1%;
-	font-family: OpenSans-Bold;
+	font-family: 'OpenSans-Bold';
 	font-size: 45px;
 	color: #fff;
 	text-align: center;
@@ -83,7 +91,7 @@
 	width: 31%;
 	padding: 2%;
 	font-size: 30px;
-	font-family: OpenSans-Bold;
+	font-family: 'OpenSans-Bold';
 	text-decoration:none;
 	color: #fff;
 	position: absolute;
@@ -105,6 +113,9 @@
 	width: 100%;
 	margin-top: 2.5%;
 }
+.conteudoHome-texto{
+	display: none;
+}
 
 @media (max-width: 700px){
 	.conteudoHome-sessao{
@@ -122,6 +133,14 @@
 	}
 	.conteudoHome-quadro{
 		display: none;
+	}
+	.conteudoHome-texto{
+		width: 97%;
+		font-family: 'OpenSans-Bold';
+		text-decoration:none;
+		color: #fff;
+		display: flex;
+		justify-content: flex-end;
 	}
 }
 
@@ -142,7 +161,7 @@
 .rodapeHome-texto{
 	width: 50%;
 	font-size: 32px;
-	font-family: OpenSans-Bold;
+	font-family: 'OpenSans-Bold';
 	color: #fff;
 	margin-left: 2%;
 }
@@ -158,7 +177,7 @@
 	width: 100%;
 	height: 5vh;
 	text-align: center;
-	font-family: OpenSans-Regular;
+	font-family: 'OpenSans-Regular';
 	font-size: 20px;
 	position: absolute;
 	bottom: 0;
@@ -167,21 +186,54 @@
 .creditos-home{
 	background-color: rgba(255, 255, 255, 0.8);
 }
+
+@media (max-width: 700px){
+	.rodapeHome{
+		background: #000;
+		display: flex;
+		flex-wrap: wrap-reverse;
+	}
+	.rodapeHome-texto{
+		width: 100%;
+		height: 20vh;
+		font-size: 20px;
+		font-family: 'OpenSans-Bold';
+		color: #fff;
+		text-align: center;
+		margin: 0 2% 2% 2%;
+	}
+	.rodapeHome-redes{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.redes-logos{
+		width: 13%;
+	}
+	.creditos-home{
+		background-color: #000;
+		font-size: 13px;
+		color: #fff;
+	}
+}
+
 .cabecalhoContato{
 	background-color: #a52a2a;
 	height: 45vh;
 }
 .conteudoContato{
 	width: 100%;
-	height: 95vh;
+	min-height: 50vh;
 	background: #a52a2a;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: center;
 	align-content: flex-start;
 }
 .conteudoContato-localizacao{
 	width: 50%;
+	min-width: 400px;
 	height: 90vh;
 	display: flex;
 	flex-direction: column;
@@ -194,54 +246,93 @@
 .localizacao-texto{
 	font-size: 25px;
 	color: #fff;
-	font-family: OpenSans-Regular;
+	font-family: 'OpenSans-Regular';
 	margin-left: 10%;
 }
 .conteudoContato-formulario{
 	width: 50%;
-	height: 90vh;
+	min-width: 400px;
+	min-height: 90vh;
 }
 .formulario-titulo{
-	width: 95%;
+	width: 97%;
 	height: 10vh;
-	padding-right: 5%;
 	margin-bottom: 1%; 
 	font-size: 50px;
-	font-family: OpenSans-Bold;
+	font-family: 'OpenSans-Bold';
 	color: #fff;
-	display: flex;
+	display: flex;;
 	justify-content: flex-end;
+}
+.formulario{
+	display: flex;
+	flex-direction: column;
+	margin-right: 3%;
 }
 .formulario-dados{
 	font-size: 30px;
-	font-family: OpenSans-Regular;
+	font-family: 'OpenSans-Regular';
 	color: #fff;
 	margin: 0;
 }
 .formulario-caixaTexto{
-	width: 95%;
+	width: 100%;
 	height: 5vh;
 	border: 1px solid #000;
 	background: #fff;
 	font-size: 25px;
-	font-family: OpenSans-Regular;
+	font-family: 'OpenSans-Regular';
 	color: #000;
 }
 .formulario-caixaMensagem{
-	width: 95%;
+	width: 100%;
 	height: 25vh;
 	background: #fff;
 	font-size: 25px;
-	font-family: OpenSans-Regular;
+	font-family: 'OpenSans-Regular';
 	color: #000;
 	border: 1px solid #000;
 }
 .formulario-botão{
 	font-size: 17px;
-	font-family: OpenSans-Regular;
-	position: absolute;
-	right: 3%;
+	font-family: 'OpenSans-Regular';
+	align-self: flex-end;
 }
+
+@media (max-width: 700px){
+	.conteudoContato{
+		height: auto;
+		justify-content: center;
+		align-items: center;
+	}
+	.conteudoContato-localizacao{
+		width: 100%;
+		height: auto;
+		justify-content: center;
+		align-items: center;
+	}
+	.localizacao-logo{
+		margin: 0;
+		margin-bottom: 3%;
+	}
+	.localizacao-texto{
+		margin: 0;
+		text-align: center;
+	}
+	.conteudoContato-formulario{
+		width: 80%;
+		min-width: auto;
+	}
+	.formulario-titulo{
+		justify-content: center;
+		align-items: center;
+		font-size: 45px;
+	}
+	.formulario{
+		margin: 0;
+	}
+}
+
 .rodadeContato{
 	background-color: #a52a2a;
 }
@@ -255,7 +346,7 @@
 }
 .realizacao-titulo{
 	font-size: 25px;
-	font-family: OpenSans-Regular;
+	font-family: 'OpenSans-Regular';
 	color: #fff;
 	margin-left: 10%;
 }
@@ -265,12 +356,11 @@
 }
 .rodadeContato-apoio{
 	width: 60%;
-	flex-wrap: wrap;
 }
 .apoio-titulo{
 	width: 100%;
 	font-size: 25px;
-	font-family: OpenSans-Regular;
+	font-family: 'OpenSans-Regular';
 	color: #fff;
 	margin-left:10px;
 }
@@ -282,6 +372,11 @@
 .apoio-logo2{
 	width: 30%;
 }
+
+@media (max-width: 700px){
+	
+}
+
 .cabecalhoGaleria{
 	background-color: #000;
 	height: 50vh;
@@ -298,7 +393,7 @@
 .conteudoGaleria-titulo{
 	width: 100%;
 	background-color: #000;
-	font-family: OpenSans-Bold;
+	font-family: 'OpenSans-Bold';
 	text-align: center;
 	color: #fff;
 	font-size: 30px;
@@ -322,4 +417,19 @@
 }
 .creditos-galeria{
 	color: #fff;
+}
+
+@media (max-width: 700px){
+	.conteudoGaleria-caixa{
+		width: 100%;
+		align-items: center;
+		margin: 0;
+	}
+	.caixa-fotos{
+		width: 95%;
+		height: auto;
+	}
+	.creditos-galeria{
+		font-size: 13px;
+	}
 }
